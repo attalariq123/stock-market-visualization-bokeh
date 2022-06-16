@@ -34,10 +34,6 @@ from bokeh.core.validation.warnings import EMPTY_LAYOUT, MISSING_RENDERERS
 silence(EMPTY_LAYOUT, True)
 silence(MISSING_RENDERERS, True)
 
-!pip install bokeh
-
-!pip install geopandas
-
 curdoc().theme = "dark_minimal"
 
 output_notebook()
@@ -80,8 +76,6 @@ Nikkei_cds = ColumnDataSource(df_Nikkei)
 df_HangSeng['image'] = 'https://www.logolynx.com/images/logolynx/b5/b58776ed2b1aa648ad97051fbc53457.jpeg'
 df_NasDaq['image'] = 'https://amcham.no/wp-content/uploads/2019/04/nasdaq-logo-white.png'
 df_Nikkei['image'] = 'https://cdn.shopify.com/s/files/1/1548/2107/files/nikkei.png?v=1480953545'
-
-df_HangSeng.head(1)
 
 from bokeh.layouts import layout
 from bokeh.models import HoverTool,Select
