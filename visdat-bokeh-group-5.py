@@ -36,8 +36,6 @@ silence(MISSING_RENDERERS, True)
 
 curdoc().theme = "dark_minimal"
 
-output_notebook()
-
 df_HangSeng = pd.read_csv("./Hang_Seng.csv")
 
 df_NasDaq = pd.read_csv("./Nasdaq.csv")
