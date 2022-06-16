@@ -20,8 +20,6 @@ Anggota:
 
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 from bokeh.io import output_file, output_notebook,curdoc
 from bokeh.plotting import figure, show
@@ -35,8 +33,6 @@ silence(EMPTY_LAYOUT, True)
 silence(MISSING_RENDERERS, True)
 
 curdoc().theme = "dark_minimal"
-
-output_notebook()
 
 df_HangSeng = pd.read_csv("./Hang_Seng.csv")
 
