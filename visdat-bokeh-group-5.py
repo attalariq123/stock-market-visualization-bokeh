@@ -173,10 +173,10 @@ fig.legend.background_fill_alpha=0.8
 fig.legend.click_policy="hide"
 
 layout=layout([
+               [tabs],
                [select],
                [fig],
-               [tabs],
 ])
 
 curdoc().add_root(layout)
-curdoc().title = "Stock Market Dashboard"
+curdoc().title = "Stock Market Visualization"
